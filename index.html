@@ -1,0 +1,107 @@
+<!--------------------------------------------------------------------------------------------------------
+                             Projeto de JavaScript
+    Jogo de dados na página HTML com JavaScript. Para jogar, é necessário se cadastrar primeiro, e depois
+é possível visualizar os dados digitados no botão do jogador, cada jogador tem dez pontos e a cada rodada
+é sorteado um número do dado, quem tiver o maior número vence e o perdedor perder um ponto. Quem chegar a 
+zero pontos perde.
+
+Autor: Christian Primo                       
+---------------------------------------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto de JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<!--Quando clicar na página, dois sons são executados-->
+<body id="pagina" onclick="execSom(); somClick()">
+    <!--Áudio da página-->
+    <audio style="visibility: hidden;" id="player">
+        <source src="pacmanIntro.wav" type="audio/wav">
+    </audio>
+    <audio style="visibility: hidden;" id="rufando" loop>
+        <source src="TamborRufando.mp3" type="audio/mpeg">
+    </audio>
+    <audio style="visibility: hidden;" id="aplausos" autoplay>
+        <source src="Aplausos.mp3" type="audio/mpeg">
+    </audio>
+    <audio style="visibility: hidden;" id="somDoClick">
+        <source src="Click.wav" type="audio/wav">
+    </audio>
+    <audio style="visibility: hidden;" id="somRay" loop>
+        <source src="raymanIntro.mp3" type="audio/mpeg">
+    </audio>
+    <!--Título da página-->
+    <h1 id="tjd">Jogo de Dados</h1>
+    <h1 id="tv"></h1>
+    <!--Div contendo as mansagens de quem venceu-->
+    <div id="ps">
+        <span id="pj1"></span>
+        <span id="pe"></span>
+        <span id="pj2"></span>
+    </div>
+    <!--Div contendo o os dados do formulário, o paragráfo do total, a imagem do dado e o botão jogar do jogador 1-->
+    <div id="imgdiv1">
+        <div id="dadosj1">
+            <label id="lnomeDoJ1">Nome:</label>
+            <p id="nomeDoJ1"></p>
+            <label id="lnickDoJ1">Nick:</label>
+            <p id="nickDoJ1"></p>
+            <label id="lidadeDoJ1">Idade:</label>
+            <p id="idadeDoJ1"></p>
+        </div>
+        <div id="j1">
+            <p id="totalj1" style="color: black;">Total:10</p>
+            <img src="dado0.png" id="imgdado1"><br><br>
+            <input type="button" id="bj1" value="Jogar"
+                onclick="paraImagens(); sorteioj1(); escondej1(); escondej2(); escondeEMP();">
+        </div>
+        <!--Botões de ver os dados e recomeçar o jogo-->
+        <input type="button" id="jogar" value="Ver dados"
+            onclick="mostraDadosJog('dadosj1'); pegaDadosJ1();mostraDadosJog('dadosj2'); pegaDadosJ2()">
+        <input type="button" id="recomecar" onclick="location.reload()" value="Recomeçar">
+        <!--Div que contém o formulário do jogador 1-->
+        <div id="cadjog1">
+            <h4 id="h4j1">Jogador 1</h4>
+            <input type="text" id="nomej1" placeholder="Digite seu nome" required>
+            <input type="text" id="nickj1" placeholder="Digite seu nick name" required>
+            <input type="number" id="idadej1" placeholder="Digite sua idade" required>
+        </div>
+    </div>
+    <!--Div contendo os dados do formulário, o paragráfo do total, a imagem do dado e o botão jogar do jogador 2-->
+    <div id="imgdiv2">
+        <div id="j2">
+            <p id="totalj2" style="color: black;">Total:10</p>
+            <img src="dado0.png" id="imgdado2"><br><br>
+            <input type="button" id="bj2" value="Jogar" onclick="totalDoj1(); totalDoj2(); sorteioj2(); vencedor();">
+        </div>
+
+
+        <div id="dadosj2">
+            <label id="lnomeDoJ2">Nome:</label>
+            <p id="nomeDoJ2"></p>
+            <label id="lnickDoJ2">Nick:</label>
+            <p id="nickDoJ2"></p>
+            <label id="lidadeDoJ2">Idade:</label>
+            <p id="idadeDoJ2"></p>
+        </div>
+        <!--Div que tem o botão para cadastrar os jogadores-->
+        <div id="botoes">
+            <input type="button" id="cadastro" value="Cadastrar jogadores"
+                onclick="validaCadastro(); mostrajog('cadjog1'); mostrajog('cadjog2');">
+        </div>
+        <!--Div que contém o formulário do jogador 2-->
+        <div id="cadjog2">
+            <h4 id="h4j2">Jogador 2</h4>
+            <input type="text" id="nomej2" placeholder="Digite seu nome" required>
+            <input type="text" id="nickj2" placeholder="Digite seu nick name" required>
+            <input type="number" id="idadej2" placeholder="Digite sua idade" required>
+        </div>
+    </div>
+</body>
+
+</html>

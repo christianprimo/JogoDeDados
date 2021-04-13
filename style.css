@@ -1,0 +1,286 @@
+/*Definindo as cores e o posicionamento dos elementos da página*/
+#pagina {
+    background-color: slategray;
+}
+
+label {
+    color: midnightblue;
+    font: bold;
+    font-family: helvetica;
+}
+
+p {
+    color: navy;
+}
+
+#j1 {
+    margin: 60px 0 0 350px;
+    float: left;
+    max-width: 10px;
+    max-height: 10px;
+    z-index: 1;
+    position: absolute;
+}
+
+#j2 {
+    margin: 60px 0 0 50px;
+    float: right;
+    max-width: 10px;
+    max-height: 10px;
+    z-index: 1;
+    position: absolute;
+}
+
+#botoes {
+    margin: 250px 0 0 0;
+    max-width: 191px;
+    max-height: 1px;
+    z-index: 1;
+    position: absolute;
+}
+
+#jogar {
+    display: none;
+    margin: 250px 0 0 390px;
+    max-width: 191px;
+    z-index: 1;
+    position: absolute;
+}
+
+#recomecar {
+    display: none;
+    margin: 350px 0 0 450px;
+    z-index: 1;
+    position: absolute;
+}
+
+#tjd {
+    margin: 20px 0 0 400px;
+    text-align: center;
+    color: whitesmoke;
+    z-index: 1;
+    position: absolute;
+}
+
+#imgdado1 {
+    max-width: 400px;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+#imgdado2 {
+    max-width: 400px;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+#pj1 {
+    color: greenyellow;
+    margin: 70px 0 0 50px;
+    float: left;
+    z-index: 1;
+    position: absolute;
+
+}
+
+#pe {
+    color: red;
+    margin: 70px 0 0 25px;
+    float: initial;
+    z-index: 1;
+    position: absolute;
+}
+
+#pj2 {
+    color: greenyellow;
+    margin: 70px 450px 0 0;
+    width: 200px;
+    float: right;
+    z-index: 1;
+    position: absolute;
+}
+
+#pj1 {
+    margin: 60px 0 0 320px;
+    float: left
+}
+
+#pj2 {
+    margin: 60px 0 0 520px;
+    float: right;
+}
+
+#pe {
+    margin: 60px 0 0 450px;
+}
+
+#bj1 {
+    display: none;
+    margin-left: 15px;
+}
+
+#bj2 {
+    display: none;
+    margin-left: 15px;
+}
+
+#cadjog1 {
+    display: none;
+    float: left;
+    position: relative;
+    max-width: 40%;
+    max-height: 40%;
+    margin-top: 350px;
+}
+
+#cadjog2 {
+    display: none;
+    float: right;
+    position: relative;
+    max-width: 40%;
+    max-height: 40%;
+    margin-top: 350px;
+}
+
+#nomej1 {
+    float: left;
+    margin: 5px 0 0 0;
+}
+
+#nickj1 {
+    float: left;
+    margin: 10px 700px 0 0;
+}
+
+#idadej1 {
+    float: left;
+    margin: 10px 550px 0 0;
+}
+
+#h4j1 {
+    margin: 0 0 0 40px;
+}
+
+#nomej2 {
+    float: right;
+    margin: 5px 0 0 500px;
+}
+
+#nickj2 {
+    float: right;
+    margin: 10px 0 0 700px;
+}
+
+#idadej2 {
+    float: right;
+    margin: 10px 0 0 550px;
+}
+
+#h4j2 {
+    float: right;
+    margin: 5px 50px 0 0;
+}
+
+#dadosj1 {
+    display: none;
+    float: left;
+    max-width: 1px;
+    max-height: 1px;
+    margin: 25px 0 0 20px;
+}
+
+#dadosj2 {
+    display: none;
+    float: right;
+    margin-left: 400px;
+    max-width: 1px;
+    max-height: 1px;
+    margin-top: 40px;
+}
+
+#lnomeDoJ1 {
+    float: left;
+    margin: 10px 0 5px 0;
+}
+
+#lnickDoJ1 {
+    float: left;
+    margin: 0 0 5px 0;
+}
+
+#lidadeDoJ1 {
+    float: left;
+    margin: 0 0 5px 0;
+}
+
+#nomeDoJ1 {
+    float: left;
+    margin: 0 0 0 50px;
+}
+
+#nickDoJ1 {
+    float: left;
+    margin: 0 0 0 50px;
+}
+
+#idadeDoJ1 {
+    float: left;
+    margin: 0 0 0 70px;
+}
+
+#lnomeDoJ2 {
+    float: right;
+    margin: 10px 115px 5px 0;
+}
+
+#lnickDoJ2 {
+    float: right;
+    margin: 0 125px 5px 0;
+}
+
+#lidadeDoJ2 {
+    float: right;
+    margin: 0 115px 5px 0;
+}
+
+#nomeDoJ2 {
+    float: right;
+    margin: 0 50px 0 0;
+}
+
+#nickDoJ2 {
+    float: right;
+    margin: 0 50px 0 0;
+}
+
+#idadeDoJ2 {
+    float: right;
+    margin: 0 70px 0 0;
+}
+
+#imgdiv1 {
+    background-color: lightslategrey;
+    float: left;
+    width: 50%;
+    height: 100vh;
+    position: relative;
+}
+
+#imgdiv2 {
+    background-color: lightslategrey;
+    float: right;
+    width: 50%;
+    height: 100vh;
+    position: relative;
+}
+
+#tv {
+    z-index: 1;
+    position: absolute;
+    margin: 250px 0 0 410px;
+    width: 200px;
+}
